@@ -235,7 +235,7 @@ html[lang="ur"] body.nav-open .close-label.t-ur { display: inline; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: 72% center;
   transform: scale(1.02);
   animation: hero-pan 18s ease-in-out infinite alternate;
 }
@@ -1179,7 +1179,7 @@ html[lang="ur"] .contact-person strong {
   }
 
   .hero-visual img {
-    object-position: 65% center;
+    object-position: center 42%;
   }
 
   .hero-veil {
