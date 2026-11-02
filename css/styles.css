@@ -257,6 +257,10 @@ html[lang="ur"] body.nav-open .close-label.t-ur { display: inline; }
   text-shadow: 0 1px 18px rgba(0, 0, 0, 0.28);
 }
 
+.hero-lede-br {
+  display: none;
+}
+
 html[lang="ur"] .hero .lede,
 html[lang="ur"] .hero-lede {
   font-weight: 600;
@@ -1061,6 +1065,10 @@ html[lang="ur"] .contact-person strong {
 }
 
 @media (min-width: 960px) {
+  .hero-lede-br {
+    display: block;
+  }
+
   .nav-toggle { display: none; }
 
   .site-nav {
