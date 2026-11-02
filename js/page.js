@@ -11,6 +11,18 @@
     "contact.html": {
       en: "Contact for Coffin Box Rate Rawalpindi | WhatsApp 0317 5404197",
       ur: "کوفن باکس ریٹ راولپنڈی رابطہ | واٹس ایپ 0317 5404197"
+    },
+    "privacy-policy.html": {
+      en: "Privacy Policy | Javed Traders Coffins",
+      ur: "رازداری کی پالیسی | جاوید ٹریڈرز کوفنز"
+    },
+    "terms.html": {
+      en: "Terms of Use | Javed Traders Coffins",
+      ur: "شرائط استعمال | جاوید ٹریڈرز کوفنز"
+    },
+    "disclaimer.html": {
+      en: "Disclaimer | Javed Traders Coffins",
+      ur: "دستبرداری | جاوید ٹریڈرز کوفنز"
     }
   };
   var file = (location.pathname.split("/").pop() || "index.html").toLowerCase();
