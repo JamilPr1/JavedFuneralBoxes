@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Handmade Coffin Box | Javed Handmade Coffins",
-    ur: "ہاتھ سے تیار کوفن باکس | جاوید ہاتھ سے تیار کوفنز"
+    en: "Handmade Coffin Box Rawalpindi | Javed Handmade Coffins",
+    ur: "ہاتھ سے تیار کوفن باکس راولپنڈی | جاوید ہاتھ سے تیار کوفنز"
   };
   JFC.initChrome(titles);
 
@@ -27,8 +27,8 @@
     var imgs = JFC.productImages(product);
     document.title =
       lang === "ur"
-        ? product.ur + " | جاوید ہاتھ سے تیار کوفنز"
-        : product.en + " | Javed Handmade Coffins";
+        ? product.ur + " | کوفن باکس راولپنڈی | جاوید ہاتھ سے تیار کوفنز"
+        : product.en + " | Coffin Box Rawalpindi | Javed Handmade Coffins";
 
     document.getElementById("product-title").innerHTML =
       '<span class="t-en">' + product.en + '</span><span class="t-ur">' + product.ur + "</span>";

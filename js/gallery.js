@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Gallery | Javed Handmade Coffins",
-    ur: "گیلری | جاوید ہاتھ سے تیار کوفنز"
+    en: "Coffin Box Gallery Rawalpindi | Javed Handmade Coffins",
+    ur: "کوفن باکس گیلری راولپنڈی | جاوید ہاتھ سے تیار کوفنز"
   };
   JFC.initChrome(titles);
 

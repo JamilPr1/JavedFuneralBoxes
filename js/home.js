@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Javed Handmade Coffins | Lalkurti, Rawalpindi",
-    ur: "جاوید ہاتھ سے تیار کوفنز | لالکورٹی، راولپنڈی"
+    en: "Handmade Coffin Boxes in Rawalpindi | Javed Handmade Coffins",
+    ur: "راولپنڈی میں ہاتھ سے تیار کوفن باکس | جاوید ہاتھ سے تیار کوفنز"
   };
   JFC.initChrome(titles);
 
@@ -23,13 +23,15 @@
       var list = (data.products || []).filter(function (p) {
         return p.shop !== false;
       });
-      // Six featured types: variety across light / dark / ceremonial / cargo
+      // Eight featured types: fills a 4×2 laptop grid
       var featuredIds = [
         "light-pine-viewing-white-lined",
         "carved-cherry-cross-viewing-coffin",
         "dark-walnut-silver-rail-rectangular",
         "honey-oak-tapered-brass-handles",
         "white-painted-tapered-white-rails",
+        "dark-mahogany-viewing-brass-handles",
+        "classic-cherry-tapered-brass-handles",
         "cherry-cargo-repatriation-transit-box"
       ];
       var featured = featuredIds
@@ -39,9 +41,9 @@
           });
         })
         .filter(Boolean);
-      if (featured.length < 6) {
+      if (featured.length < 8) {
         list.forEach(function (p) {
-          if (featured.length >= 6) return;
+          if (featured.length >= 8) return;
           if (!featured.some(function (f) { return f.id === p.id; })) featured.push(p);
         });
       }

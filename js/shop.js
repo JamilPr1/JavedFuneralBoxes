@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Shop Coffin Boxes | Javed Handmade Coffins",
-    ur: "کوفن باکس خریدیں | جاوید ہاتھ سے تیار کوفنز"
+    en: "Shop Coffin Boxes in Rawalpindi | Javed Handmade Coffins",
+    ur: "راولپنڈی میں کوفن باکس خریدیں | جاوید ہاتھ سے تیار کوفنز"
   };
   JFC.initChrome(titles);
 
