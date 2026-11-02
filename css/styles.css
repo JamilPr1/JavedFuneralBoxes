@@ -246,11 +246,21 @@ html[lang="ur"] body.nav-open .close-label.t-ur { display: inline; }
   color: #fff;
 }
 
+.hero .lede,
 .hero-lede {
-  color: #f4efe6;
-  font-weight: 500;
-  max-width: 36rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.1vw, 1.35rem);
+  line-height: 1.55;
+  max-width: 34rem;
   opacity: 1;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.28);
+}
+
+html[lang="ur"] .hero .lede,
+html[lang="ur"] .hero-lede {
+  font-weight: 600;
+  line-height: 1.85;
 }
 
 .hero .btn-on-dark,
