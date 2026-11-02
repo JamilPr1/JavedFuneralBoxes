@@ -1,12 +1,12 @@
 (function () {
   var map = {
     "delivery.html": {
-      en: "Coffin Box Delivery Pakistan & Abroad | Javed Handmade Coffins",
-      ur: "کوفن باکس ڈیلیوری پاکستان اور بیرون ملک | جاوید ہاتھ سے تیار کوفنز"
+      en: "Coffin Box Delivery Pakistan & Abroad | Javed Traders Coffins",
+      ur: "کوفن باکس ڈیلیوری پاکستان اور بیرون ملک | جاوید ٹریڈرز کوفنز"
     },
     "about.html": {
-      en: "About Javed Traders & Handmade Coffins Lalkurti | Javed Yaqub",
-      ur: "جاوید ٹریڈرز اور ہاتھ سے تیار کوفنز لالکورٹی | جاوید یعقوب"
+      en: "About Javed Traders Coffins Lalkurti | Javed Yaqub",
+      ur: "جاوید ٹریڈرز کوفنز لالکورٹی | جاوید یعقوب"
     },
     "contact.html": {
       en: "Contact for Coffin Box Rate Rawalpindi | WhatsApp 0317 5404197",
@@ -33,14 +33,14 @@
     if (error) error.hidden = true;
     var text =
       JFC.currentLang() === "ur"
-        ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز (جاوید ٹریڈرز)۔ میرا نام " +
+        ? "السلام علیکم، جاوید ٹریڈرز کوفنز۔ میرا نام " +
           name +
           " ہے۔ مجھے " +
           city +
           " میں ہاتھ سے تیار کوفن باکس چاہیے۔" +
           (note ? " " + note : "") +
           " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
-        : "Hello Javed Handmade Coffins (Javed Traders). My name is " +
+        : "Hello Javed Traders Coffins. My name is " +
           name +
           ". I need a handmade coffin box in " +
           city +

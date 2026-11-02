@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Coffin Box Gallery Rawalpindi | Javed Handmade Coffins",
-    ur: "کوفن باکس گیلری راولپنڈی | جاوید ہاتھ سے تیار کوفنز"
+    en: "Coffin Box Gallery Rawalpindi | Javed Traders Coffins",
+    ur: "کوفن باکس گیلری راولپنڈی | جاوید ٹریڈرز کوفنز"
   };
   JFC.initChrome(titles);
 

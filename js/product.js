@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Handmade Coffin Box Rawalpindi | Javed Handmade Coffins",
-    ur: "ہاتھ سے تیار کوفن باکس راولپنڈی | جاوید ہاتھ سے تیار کوفنز"
+    en: "Handmade Coffin Box Rawalpindi | Javed Traders Coffins",
+    ur: "ہاتھ سے تیار کوفن باکس راولپنڈی | جاوید ٹریڈرز کوفنز"
   };
   JFC.initChrome(titles);
 
@@ -27,8 +27,8 @@
     var imgs = JFC.productImages(product);
     document.title =
       lang === "ur"
-        ? product.ur + " | کوفن باکس راولپنڈی | جاوید ہاتھ سے تیار کوفنز"
-        : product.en + " | Coffin Box Rawalpindi | Javed Handmade Coffins";
+        ? product.ur + " | کوفن باکس راولپنڈی | جاوید ٹریڈرز کوفنز"
+        : product.en + " | Coffin Box Rawalpindi | Javed Traders Coffins";
 
     document.getElementById("product-title").innerHTML =
       '<span class="t-en">' + product.en + '</span><span class="t-ur">' + product.ur + "</span>";
@@ -152,7 +152,7 @@
       var boxName = JFC.productLabel(product, lang);
       var text =
         lang === "ur"
-          ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز (جاوید ٹریڈرز)۔ میرا نام " +
+          ? "السلام علیکم، جاوید ٹریڈرز کوفنز۔ میرا نام " +
             name +
             " ہے۔ مجھے یہ ہاتھ سے تیار باکس چاہیے: " +
             boxName +
@@ -162,7 +162,7 @@
             (phone ? " فون: " + phone + "۔" : "") +
             (note ? " " + note : "") +
             " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
-          : "Hello Javed Handmade Coffins (Javed Traders). My name is " +
+          : "Hello Javed Traders Coffins. My name is " +
             name +
             ". I want this handmade box: " +
             boxName +
