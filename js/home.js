@@ -8,39 +8,6 @@
   var grid = document.getElementById("featured-grid");
   var form = document.getElementById("rate-form");
   var error = document.getElementById("form-error");
-  var slides = Array.prototype.slice.call(document.querySelectorAll(".hero-slide"));
-  var dots = Array.prototype.slice.call(document.querySelectorAll("[data-hero-dot]"));
-  var heroIndex = 0;
-  var heroTimer = null;
-
-  function showHeroSlide(next) {
-    if (!slides.length) return;
-    heroIndex = (next + slides.length) % slides.length;
-    slides.forEach(function (slide, i) {
-      slide.classList.toggle("is-active", i === heroIndex);
-    });
-    dots.forEach(function (dot, i) {
-      dot.classList.toggle("is-active", i === heroIndex);
-    });
-  }
-
-  function startHeroCarousel() {
-    if (slides.length < 2) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    clearInterval(heroTimer);
-    heroTimer = setInterval(function () {
-      showHeroSlide(heroIndex + 1);
-    }, 4500);
-  }
-
-  dots.forEach(function (dot) {
-    dot.addEventListener("click", function () {
-      showHeroSlide(Number(dot.getAttribute("data-hero-dot")) || 0);
-      startHeroCarousel();
-    });
-  });
-
-  startHeroCarousel();
 
   function renderFeatured(list) {
     if (!grid) return;
