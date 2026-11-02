@@ -81,8 +81,8 @@
       }
       error.hidden = true;
       var text = currentLang() === "ur"
-        ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز۔ میرا نام " + name + " ہے۔ مجھے " + city + " میں کوفن باکس چاہیے۔" + (note ? " " + note : "") + " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
-        : "Hello Javed Handmade Coffins. My name is " + name + ". I need a coffin box in " + city + "." + (note ? " " + note : "") + " Please share the rate and delivery time.";
+        ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز (جاوید ٹریڈرز)۔ میرا نام " + name + " ہے۔ مجھے " + city + " میں کوفن باکس چاہیے۔" + (note ? " " + note : "") + " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
+        : "Hello Javed Handmade Coffins (Javed Traders). My name is " + name + ". I need a coffin box in " + city + "." + (note ? " " + note : "") + " Please share the rate and delivery time.";
       var url = waBase + encodeURIComponent(text);
       var opened = window.open(url, "_blank", "noopener");
       if (!opened) window.location.href = url;

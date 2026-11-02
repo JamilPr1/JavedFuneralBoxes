@@ -152,7 +152,7 @@
       var boxName = JFC.productLabel(product, lang);
       var text =
         lang === "ur"
-          ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز۔ میرا نام " +
+          ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز (جاوید ٹریڈرز)۔ میرا نام " +
             name +
             " ہے۔ مجھے یہ ہاتھ سے تیار باکس چاہیے: " +
             boxName +
@@ -162,7 +162,7 @@
             (phone ? " فون: " + phone + "۔" : "") +
             (note ? " " + note : "") +
             " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
-          : "Hello Javed Handmade Coffins. My name is " +
+          : "Hello Javed Handmade Coffins (Javed Traders). My name is " +
             name +
             ". I want this handmade box: " +
             boxName +

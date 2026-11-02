@@ -69,14 +69,14 @@
       error.hidden = true;
       var text =
         JFC.currentLang() === "ur"
-          ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز۔ میرا نام " +
+          ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز (جاوید ٹریڈرز)۔ میرا نام " +
             name +
             " ہے۔ مجھے " +
             city +
             " میں ہاتھ سے تیار کوفن باکس چاہیے۔" +
             (note ? " " + note : "") +
             " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
-          : "Hello Javed Handmade Coffins. My name is " +
+          : "Hello Javed Handmade Coffins (Javed Traders). My name is " +
             name +
             ". I need a handmade coffin box in " +
             city +

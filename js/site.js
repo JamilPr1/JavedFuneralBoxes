@@ -1,8 +1,8 @@
 (function (global) {
   var waBase = "https://wa.me/923175404197?text=";
   var messages = {
-    en: "Hello. I am contacting Javed Handmade Coffins, Lalkurti, Rawalpindi. Please share the rate and delivery time for a coffin box.",
-    ur: "السلام علیکم۔ جاوید ہاتھ سے تیار کوفنز، لالکورٹی، راولپنڈی سے رابطہ ہے۔ کوفن باکس کا ریٹ اور ڈیلیوری کا وقت بتائیں۔"
+    en: "Hello. I am contacting Javed Handmade Coffins (Javed Traders), Lalkurti, Rawalpindi. Please share the rate and delivery time for a coffin box.",
+    ur: "السلام علیکم۔ جاوید ہاتھ سے تیار کوفنز (جاوید ٹریڈرز)، لالکورٹی، راولپنڈی سے رابطہ ہے۔ کوفن باکس کا ریٹ اور ڈیلیوری کا وقت بتائیں۔"
   };
 
   function currentLang() {
