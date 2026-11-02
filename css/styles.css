@@ -285,17 +285,19 @@ html[lang="ur"] body.nav-open .close-label.t-ur { display: inline; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(24px, 4vw, 48px);
-  min-height: 320px;
+  padding: 0;
+  min-height: 280px;
+  overflow: hidden;
 }
 
 .hero-media img {
   width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: min(60vh, 560px);
-  object-fit: contain;
-  object-position: center;
+  height: 100%;
+  min-height: 280px;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center 58%;
   display: block;
 }
 
@@ -741,7 +743,7 @@ html[lang="ur"] .panel-person-name {
 
 .about-portrait img {
   width: 100%;
-  max-width: 360px;
+  max-width: 280px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
@@ -810,7 +812,8 @@ html[lang="ur"] .about-portrait figcaption strong {
 
 .workshop-strip img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
+  max-height: 280px;
   object-fit: cover;
   object-position: center;
   border-radius: 16px;
@@ -1077,12 +1080,16 @@ html[lang="ur"] .contact-person strong {
 
   .hero-media {
     min-height: 100%;
-    padding: clamp(36px, 5vw, 72px);
+    height: 100%;
+    padding: 0;
   }
 
   .hero-media img {
-    max-height: min(70vh, 640px);
+    min-height: 100%;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center 55%;
   }
 
   html[dir="rtl"] .hero-media::before {
@@ -1117,7 +1124,8 @@ html[lang="ur"] .contact-person strong {
   }
 
   .workshop-strip img {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 3;
+    max-height: 260px;
   }
 
   .hero-grid {
@@ -1202,7 +1210,8 @@ html[lang="ur"] .contact-person strong {
 
   .hero-media {
     order: 2;
-    min-height: 280px;
+    min-height: 200px;
+    max-height: 220px;
   }
 
   .hero-media::before {
@@ -1210,7 +1219,7 @@ html[lang="ur"] .contact-person strong {
     inset-inline: 0;
     top: 0;
     width: auto;
-    height: 64px;
+    height: 48px;
     background: linear-gradient(
       180deg,
       rgba(12, 28, 22, 0.5) 0%,
@@ -1220,7 +1229,11 @@ html[lang="ur"] .contact-person strong {
   }
 
   .hero-media img {
-    max-height: 340px;
+    min-height: 200px;
+    max-height: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center 50%;
   }
 
   .hero-actions {
@@ -1328,13 +1341,37 @@ html[lang="ur"] .contact-person strong {
     font-size: 1.3rem;
   }
 
+  .about-intro {
+    gap: 20px;
+  }
+
+  .about-portrait {
+    max-width: 220px;
+    margin-inline: auto;
+  }
+
   .about-portrait img {
-    max-width: none;
+    max-width: 220px;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+  }
+
+  .workshop-strip {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 28px;
   }
 
   .workshop-strip img {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 5 / 4;
+    max-height: 140px;
+    width: 100%;
+    object-fit: cover;
     object-position: center top;
+  }
+
+  .workshop-strip figcaption {
+    font-size: 0.82rem;
   }
 
   .footer-nav {
