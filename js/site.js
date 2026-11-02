@@ -81,6 +81,71 @@
     return lang === "ur" ? product.ur : product.en;
   }
 
+  function productImages(product) {
+    if (product.images && product.images.length) return product.images;
+    return [{ image: product.image, thumb: product.thumb || product.image }];
+  }
+
+  function productUrl(product) {
+    return "product.html?id=" + encodeURIComponent(product.id);
+  }
+
+  function queryParam(name) {
+    try {
+      return new URLSearchParams(window.location.search).get(name) || "";
+    } catch (e) {
+      return "";
+    }
+  }
+
+  function productCardHtml(product, options) {
+    var opts = options || {};
+    var imgs = productImages(product);
+    var count = imgs.length;
+    var href = productUrl(product);
+    var countHtml =
+      count > 1
+        ? '<span class="photo-count"><span class="t-en">' +
+          count +
+          ' photos</span><span class="t-ur">' +
+          count +
+          " تصاویر</span></span>"
+        : "";
+    var pick =
+      opts.pick === false
+        ? ""
+        : '<span class="product-pick"><span class="t-en">View this box</span><span class="t-ur">یہ باکس دیکھیں</span></span>';
+    return (
+      '<a class="product-card" href="' +
+      href +
+      '">' +
+      '<div class="product-media"><img src="' +
+      (product.thumb || imgs[0].thumb) +
+      '" alt="' +
+      product.en +
+      '" loading="lazy" width="560" height="420">' +
+      countHtml +
+      "</div>" +
+      "<h3><span class=\"t-en\">" +
+      product.en +
+      '</span><span class="t-ur">' +
+      product.ur +
+      "</span></h3>" +
+      '<p class="product-meta"><span class="t-en">Handmade · ' +
+      (product.type_en || "") +
+      '</span><span class="t-ur">ہاتھ سے تیار · ' +
+      (product.type_ur || "") +
+      "</span></p>" +
+      '<p class="product-meta product-meta-soft"><span class="t-en">' +
+      product.feature_en +
+      '</span><span class="t-ur">' +
+      product.feature_ur +
+      "</span></p>" +
+      pick +
+      "</a>"
+    );
+  }
+
   global.JFC = {
     waBase: waBase,
     currentLang: currentLang,
@@ -88,6 +153,10 @@
     initChrome: initChrome,
     openWhatsApp: openWhatsApp,
     loadProducts: loadProducts,
-    productLabel: productLabel
+    productLabel: productLabel,
+    productImages: productImages,
+    productUrl: productUrl,
+    queryParam: queryParam,
+    productCardHtml: productCardHtml
   };
 })(window);

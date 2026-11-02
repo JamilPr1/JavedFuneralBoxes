@@ -5,47 +5,53 @@
   };
   JFC.initChrome(titles);
 
-  var track = document.getElementById("loop-track");
+  var grid = document.getElementById("featured-grid");
   var form = document.getElementById("rate-form");
   var error = document.getElementById("form-error");
 
+  function renderFeatured(list) {
+    if (!grid) return;
+    grid.innerHTML = list
+      .map(function (p) {
+        return JFC.productCardHtml(p);
+      })
+      .join("");
+  }
+
   JFC.loadProducts()
     .then(function (data) {
-      var list = data.products || [];
-      if (!track || !list.length) return;
-      var cards = [];
-      list.forEach(function (p) {
-        var imgs = p.images && p.images.length ? p.images : [{ thumb: p.thumb, image: p.image }];
-        // Cover + up to 2 more angles so the carousel shows variety of the same handmade types
-        imgs.slice(0, 3).forEach(function (img, i) {
-          cards.push({
-            href: "shop.html#" + p.id,
-            thumb: img.thumb || img.image,
-            en: i === 0 ? p.en : p.en + " · view",
-            ur: i === 0 ? p.ur : p.ur + " · زاویہ"
-          });
-        });
+      var list = (data.products || []).filter(function (p) {
+        return p.shop !== false;
       });
-      var html = cards
-        .map(function (c) {
-          return (
-            '<a class="loop-card" href="' +
-            c.href +
-            '"><img src="' +
-            c.thumb +
-            '" alt="' +
-            c.en +
-            '" loading="lazy" width="420" height="420"><span><span class="t-en">' +
-            c.en +
-            '</span><span class="t-ur">' +
-            c.ur +
-            "</span></span></a>"
-          );
+      // Six featured types: variety across light / dark / ceremonial / cargo
+      var featuredIds = [
+        "light-pine-viewing-white-lined",
+        "carved-cherry-cross-viewing-coffin",
+        "dark-walnut-silver-rail-rectangular",
+        "honey-oak-tapered-brass-handles",
+        "white-painted-tapered-white-rails",
+        "cherry-cargo-repatriation-transit-box"
+      ];
+      var featured = featuredIds
+        .map(function (id) {
+          return list.find(function (p) {
+            return p.id === id;
+          });
         })
-        .join("");
-      track.innerHTML = html + html;
+        .filter(Boolean);
+      if (featured.length < 6) {
+        list.forEach(function (p) {
+          if (featured.length >= 6) return;
+          if (!featured.some(function (f) { return f.id === p.id; })) featured.push(p);
+        });
+      }
+      renderFeatured(featured);
     })
     .catch(function () {});
+
+  document.addEventListener("jfc:lang", function () {
+    // Re-render not needed for static bilingual spans inside cards
+  });
 
   if (form) {
     form.addEventListener("submit", function (event) {

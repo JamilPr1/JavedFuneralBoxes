@@ -29,26 +29,16 @@
       items = [];
       if (products.length) {
         products.forEach(function (p) {
-          var imgs = p.images && p.images.length ? p.images : [{ image: p.image, thumb: p.thumb }];
+          var imgs = JFC.productImages(p);
           imgs.forEach(function (img, i) {
             items.push({
               src: img.image,
               thumb: img.thumb || img.image,
               en: i === 0 ? p.en : p.en + " · detail",
               ur: i === 0 ? p.ur : p.ur + " · تفصیل",
-              href: "shop.html#" + p.id
+              href: JFC.productUrl(p)
             });
           });
-        });
-      } else if (data.gallery && data.gallery.length) {
-        items = data.gallery.map(function (src, index) {
-          return {
-            src: src,
-            thumb: src,
-            en: "Handmade coffin box " + (index + 1),
-            ur: "ہاتھ سے تیار کوفن باکس " + (index + 1),
-            href: "shop.html"
-          };
         });
       }
 
@@ -59,24 +49,29 @@
 
       grid.innerHTML = "";
       items.forEach(function (item) {
-        var button = document.createElement("button");
-        button.type = "button";
-        button.className = "gallery-item";
-        button.innerHTML =
+        var figure = document.createElement("div");
+        figure.className = "gallery-item-wrap";
+        figure.innerHTML =
+          '<button type="button" class="gallery-item" aria-label="' +
+          item.en +
+          '">' +
           '<img src="' +
           item.thumb +
           '" alt="' +
           item.en +
           '" loading="lazy" width="560" height="420">' +
-          '<span class="gallery-caption"><span class="t-en">' +
+          "</button>" +
+          '<a class="gallery-caption" href="' +
+          item.href +
+          '"><span class="t-en">' +
           item.en +
           '</span><span class="t-ur">' +
           item.ur +
-          "</span></span>";
-        button.addEventListener("click", function () {
+          "</span></a>";
+        figure.querySelector("button").addEventListener("click", function () {
           openLight(item.src);
         });
-        grid.appendChild(button);
+        grid.appendChild(figure);
       });
     })
     .catch(function () {

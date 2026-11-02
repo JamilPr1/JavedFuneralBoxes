@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    try {
+      if (localStorage.getItem("jfc-lang") === "ur") {
+        document.documentElement.lang = "ur";
+        document.documentElement.dir = "rtl";
+      }
+    } catch (e) {}
+  </script>
+  <title>Handmade Coffin Box | Javed Handmade Coffins</title>
+  <meta name="description" content="View a handmade coffin box from Javed Handmade Coffins, Lalkurti, Rawalpindi. Contact for rate on WhatsApp.">
+  <meta name="theme-color" content="#17352b">
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main"><span class="t-en">Skip to content</span><span class="t-ur">مواد پر جائیں</span></a>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="index.html">
+        <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="11" y="13" width="26" height="22" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M11 20h26M6 23h5M37 23h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <span class="t-en">Javed Handmade Coffins</span>
+          <span class="t-ur">جاوید ہاتھ سے تیار کوفنز</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html"><span class="t-en">Home</span><span class="t-ur">ہوم</span></a>
+        <a href="shop.html"><span class="t-en">Shop</span><span class="t-ur">دکان</span></a>
+        <a href="gallery.html"><span class="t-en">Gallery</span><span class="t-ur">گیلری</span></a>
+        <a href="index.html#delivery"><span class="t-en">Delivery</span><span class="t-ur">ڈیلیوری</span></a>
+        <a href="index.html#about"><span class="t-en">About</span><span class="t-ur">تعارف</span></a>
+        <a href="index.html#contact"><span class="t-en">Contact</span><span class="t-ur">رابطہ</span></a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+          <button type="button" data-set-lang="ur" aria-pressed="false">اردو</button>
+        </div>
+        <a class="header-wa js-wa" href="https://wa.me/923175404197" target="_blank" rel="noopener">
+          <span class="t-en">WhatsApp</span><span class="t-ur">واٹس ایپ</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="open-label t-en">Menu</span><span class="open-label t-ur">مینو</span>
+          <span class="close-label t-en">Close</span><span class="close-label t-ur">بند</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero product-hero">
+      <div class="container">
+        <p class="eyebrow">
+          <a class="crumb" href="shop.html"><span class="t-en">Shop</span><span class="t-ur">دکان</span></a>
+          <span aria-hidden="true"> · </span>
+          <span class="t-en">Selected box</span><span class="t-ur">منتخب باکس</span>
+        </p>
+        <p id="product-missing" class="form-hint" hidden>
+          <span class="t-en">This box was not found. </span><span class="t-ur">یہ باکس نہیں ملا۔ </span>
+          <a href="shop.html"><span class="t-en">Back to shop</span><span class="t-ur">دکان پر واپس</span></a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="product-view" hidden>
+      <div class="container product-layout">
+        <div class="product-gallery">
+          <img id="product-main-img" src="" alt="" width="1000" height="750">
+          <div class="product-thumbs" id="product-thumbs"></div>
+        </div>
+        <div class="product-info">
+          <h1 class="display page-title" id="product-title"></h1>
+          <p class="product-type" id="product-type"></p>
+          <p class="lede" id="product-desc"></p>
+          <ul class="about-points product-points">
+            <li>
+              <strong><span class="t-en">Handmade</span><span class="t-ur">ہاتھ سے تیار</span></strong>
+              <span><span class="t-en">Built by hand in the Lalkurti workshop.</span><span class="t-ur">لالکورٹی ورکشاپ میں ہاتھ سے تیار۔</span></span>
+            </li>
+            <li>
+              <strong><span class="t-en">Finish</span><span class="t-ur">فنش</span></strong>
+              <span id="product-finish"></span>
+            </li>
+            <li>
+              <strong><span class="t-en">Details</span><span class="t-ur">تفصیل</span></strong>
+              <span id="product-feature"></span>
+            </li>
+          </ul>
+          <div class="hero-actions product-actions">
+            <a class="btn btn-solid" href="#ask-rate"><span class="t-en">Ask for the rate</span><span class="t-ur">ریٹ پوچھیں</span></a>
+            <a class="btn btn-line" href="shop.html"><span class="t-en">All boxes</span><span class="t-ur">تمام باکس</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="ask-rate" hidden>
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow"><span class="t-en">Order</span><span class="t-ur">آرڈر</span></p>
+          <h2 class="display">
+            <span class="t-en">Send this box on WhatsApp</span>
+            <span class="t-ur">یہ باکس واٹس ایپ پر بھیجیں</span>
+          </h2>
+          <div class="selected-preview" id="selected-preview">
+            <img id="order-preview-img" src="" alt="">
+            <div>
+              <strong id="selected-name"></strong>
+              <p id="selected-meta" class="form-hint"></p>
+            </div>
+          </div>
+          <p class="form-hint">
+            <span class="t-en">Handmade in Lalkurti. Contact for rate. Delivery across Pakistan and outside the country.</span>
+            <span class="t-ur">لالکورٹی میں ہاتھ سے تیار۔ ریٹ کے لیے رابطہ۔ ڈیلیوری پورے پاکستان اور بیرون ملک۔</span>
+          </p>
+        </div>
+
+        <form class="card" id="product-form">
+          <input type="hidden" name="box" id="selected-box" value="">
+          <label>
+            <span class="t-en">Your name</span><span class="t-ur">آپ کا نام</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            <span class="t-en">City for delivery</span><span class="t-ur">ڈیلیوری کا شہر</span>
+            <input name="city" type="text" autocomplete="address-level2" required>
+          </label>
+          <label>
+            <span class="t-en">Phone / WhatsApp</span><span class="t-ur">فون / واٹس ایپ</span>
+            <input name="phone" type="tel" autocomplete="tel" class="ltr">
+          </label>
+          <label>
+            <span class="t-en">Size or note</span><span class="t-ur">سائز یا کوئی بات</span>
+            <textarea name="note" rows="4"></textarea>
+          </label>
+          <p class="form-error" id="product-error" hidden>
+            <span class="t-en">Please add your name and city.</span>
+            <span class="t-ur">براہ کرم نام اور شہر لکھیں۔</span>
+          </p>
+          <button class="btn btn-solid btn-block" type="submit">
+            <span class="t-en">Continue on WhatsApp</span>
+            <span class="t-ur">واٹس ایپ پر جاری رکھیں</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="more-boxes" hidden>
+      <div class="container">
+        <p class="eyebrow"><span class="t-en">More boxes</span><span class="t-ur">مزید باکس</span></p>
+        <h2 class="display">
+          <span class="t-en">Other handmade types</span>
+          <span class="t-ur">دیگر ہاتھ سے تیار اقسام</span>
+        </h2>
+        <div class="product-grid" id="more-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html"><span class="t-en">Home</span><span class="t-ur">ہوم</span></a>
+        <a href="shop.html"><span class="t-en">Shop</span><span class="t-ur">دکان</span></a>
+        <a href="gallery.html"><span class="t-en">Gallery</span><span class="t-ur">گیلری</span></a>
+        <a href="index.html#delivery"><span class="t-en">Delivery</span><span class="t-ur">ڈیلیوری</span></a>
+        <a href="index.html#about"><span class="t-en">About</span><span class="t-ur">تعارف</span></a>
+        <a href="index.html#contact"><span class="t-en">Contact</span><span class="t-ur">رابطہ</span></a>
+      </nav>
+      <div class="footer-bar">
+        <p>
+          <span class="t-en">Javed Handmade Coffins · Javed Yaqub · Lalkurti, Rawalpindi</span>
+          <span class="t-ur">جاوید ہاتھ سے تیار کوفنز · جاوید یعقوب · لالکورٹی، راولپنڈی</span>
+        </p>
+        <p class="ltr">0317 5404197</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="dock">
+    <a href="tel:+923175404197"><span class="t-en">Call</span><span class="t-ur">کال</span></a>
+    <a class="js-wa" href="https://wa.me/923175404197" target="_blank" rel="noopener"><span class="t-en">WhatsApp</span><span class="t-ur">واٹس ایپ</span></a>
+  </div>
+
+  <script src="js/site.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>
