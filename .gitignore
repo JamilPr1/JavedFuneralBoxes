@@ -1,0 +1,17 @@
+# Working / source dumps (site uses images/products)
+tmp/
+images/Flow/
+images/flow-clean/
+images/raw/
+images/boxes/
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Local env
+.env
+.env.*

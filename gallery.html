@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    try {
+      if (localStorage.getItem("jfc-lang") === "ur") {
+        document.documentElement.lang = "ur";
+        document.documentElement.dir = "rtl";
+      }
+    } catch (e) {}
+  </script>
+  <title>Gallery | Javed Handmade Coffins</title>
+  <meta name="description" content="Coffin box gallery from Javed Handmade Coffins, Lalkurti, Rawalpindi. Ready boxes for Pakistan and outside the country.">
+  <meta name="theme-color" content="#17352b">
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main"><span class="t-en">Skip to content</span><span class="t-ur">مواد پر جائیں</span></a>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="index.html">
+        <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="11" y="13" width="26" height="22" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M11 20h26M6 23h5M37 23h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <span class="t-en">Javed Handmade Coffins</span>
+          <span class="t-ur">جاوید ہاتھ سے تیار کوفنز</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html"><span class="t-en">Home</span><span class="t-ur">ہوم</span></a>
+        <a href="shop.html"><span class="t-en">Shop</span><span class="t-ur">دکان</span></a>
+        <a href="gallery.html" aria-current="page"><span class="t-en">Gallery</span><span class="t-ur">گیلری</span></a>
+        <a href="index.html#delivery"><span class="t-en">Delivery</span><span class="t-ur">ڈیلیوری</span></a>
+        <a href="index.html#about"><span class="t-en">About</span><span class="t-ur">تعارف</span></a>
+        <a href="index.html#contact"><span class="t-en">Contact</span><span class="t-ur">رابطہ</span></a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+          <button type="button" data-set-lang="ur" aria-pressed="false">اردو</button>
+        </div>
+        <a class="header-wa js-wa" href="https://wa.me/923175404197" target="_blank" rel="noopener">
+          <span class="t-en">WhatsApp</span><span class="t-ur">واٹس ایپ</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="open-label t-en">Menu</span><span class="open-label t-ur">مینو</span>
+          <span class="close-label t-en">Close</span><span class="close-label t-ur">بند</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container split">
+        <div>
+          <p class="eyebrow"><span class="t-en">Handmade gallery</span><span class="t-ur">ہاتھ سے تیار گیلری</span></p>
+          <h1 class="display page-title">
+            <span class="t-en">Handmade boxes from Lalkurti.</span>
+            <span class="t-ur">لالکورٹی سے ہاتھ سے تیار باکس۔</span>
+          </h1>
+        </div>
+        <div class="prose">
+          <p>
+            <span class="t-en">Every box is handmade. Photos are grouped by type in the shop — open a picture here, then choose that type to ask for the rate.</span>
+            <span class="t-ur">ہر باکس ہاتھ سے تیار ہے۔ دکان میں اقسام کے مطابق گروپ ہیں۔ یہاں تصویر دیکھیں، پھر ریٹ کے لیے وہ قسم چنیں۔</span>
+          </p>
+          <a class="btn btn-solid" href="shop.html">
+            <span class="t-en">Open the shop</span>
+            <span class="t-ur">دکان کھولیں</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <p id="gallery-empty" class="form-hint" hidden>
+          <span class="t-en">Gallery images are not ready yet.</span>
+          <span class="t-ur">گیلری کی تصاویر ابھی تیار نہیں۔</span>
+        </p>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" type="button" data-close-lightbox aria-label="Close">
+      <span class="t-en">Close</span><span class="t-ur">بند</span>
+    </button>
+    <button class="lightbox-scrim" type="button" data-close-lightbox aria-label="Close"></button>
+    <img id="lightbox-img" alt="">
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html"><span class="t-en">Home</span><span class="t-ur">ہوم</span></a>
+        <a href="shop.html"><span class="t-en">Shop</span><span class="t-ur">دکان</span></a>
+        <a href="gallery.html" aria-current="page"><span class="t-en">Gallery</span><span class="t-ur">گیلری</span></a>
+        <a href="index.html#delivery"><span class="t-en">Delivery</span><span class="t-ur">ڈیلیوری</span></a>
+        <a href="index.html#about"><span class="t-en">About</span><span class="t-ur">تعارف</span></a>
+        <a href="index.html#contact"><span class="t-en">Contact</span><span class="t-ur">رابطہ</span></a>
+      </nav>
+      <div class="footer-bar">
+        <p>
+          <span class="t-en">Javed Handmade Coffins · Javed Yaqub · Lalkurti, Rawalpindi</span>
+          <span class="t-ur">جاوید ہاتھ سے تیار کوفنز · جاوید یعقوب · لالکورٹی، راولپنڈی</span>
+        </p>
+        <p class="ltr">0317 5404197</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="dock">
+    <a href="tel:+923175404197"><span class="t-en">Call</span><span class="t-ur">کال</span></a>
+    <a class="js-wa" href="https://wa.me/923175404197" target="_blank" rel="noopener"><span class="t-en">WhatsApp</span><span class="t-ur">واٹس ایپ</span></a>
+  </div>
+
+  <script src="js/site.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
