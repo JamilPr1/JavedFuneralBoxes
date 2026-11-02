@@ -1890,10 +1890,221 @@ body.lightbox-open {
   }
 }
 
+/* Testimonials carousel */
+.testimonials {
+  background:
+    radial-gradient(ellipse 70% 50% at 10% 0%, rgba(156, 123, 69, 0.08), transparent 55%),
+    linear-gradient(180deg, #efe8dc 0%, var(--cream) 100%);
+  border-block: 1px solid var(--line);
+}
+
+.testimonials-shell {
+  margin-top: 28px;
+  position: relative;
+}
+
+.testimonials-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonials-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.testimonial-card {
+  flex: 0 0 100%;
+  width: 100%;
+  display: grid;
+  gap: 22px;
+  align-items: start;
+  padding: 8px 2px 4px;
+}
+
+.testimonial-photo {
+  margin: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(23, 53, 43, 0.14);
+  box-shadow: 0 10px 28px rgba(23, 53, 43, 0.1);
+}
+
+.testimonial-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.testimonial-quote {
+  margin: 0;
+}
+
+.testimonial-quote p {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--green);
+  max-width: 38ch;
+}
+
+html[lang="ur"] .testimonial-quote p {
+  font-family: "Noto Naskh Arabic", "Noto Nastaliq Urdu", serif;
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  line-height: 1.75;
+  max-width: 42ch;
+}
+
+.testimonial-meta {
+  display: grid;
+  gap: 4px;
+}
+
+.testimonial-meta strong {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.testimonial-place {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.testimonials-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.testimonials-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(23, 53, 43, 0.28);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--green);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.testimonials-nav:hover,
+.testimonials-nav:focus-visible {
+  background: var(--green);
+  color: var(--cream);
+  border-color: var(--green);
+  outline: none;
+}
+
+.testimonials-dots {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-inline-start: 4px;
+}
+
+.testimonials-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(23, 53, 43, 0.22);
+  cursor: pointer;
+}
+
+.testimonials-dot[aria-current="true"] {
+  background: var(--green);
+  width: 22px;
+}
+
+.abroad-block {
+  margin-top: 40px;
+  display: grid;
+  gap: 28px;
+}
+
+.abroad-block .prose {
+  max-width: 62ch;
+}
+
+.abroad-block .prose p + p {
+  margin-top: 14px;
+}
+
+.abroad-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.abroad-points li {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.abroad-points strong {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 4px;
+}
+
+.abroad-points span {
+  color: var(--muted);
+}
+
+@media (min-width: 960px) {
+  .testimonial-card {
+    grid-template-columns: 120px minmax(0, 1fr);
+    column-gap: 36px;
+    row-gap: 10px;
+    align-items: start;
+  }
+
+  .testimonial-photo {
+    width: 120px;
+    height: 120px;
+    grid-row: 1 / span 2;
+  }
+
+  .testimonial-quote {
+    grid-column: 2;
+  }
+
+  .testimonial-meta {
+    grid-column: 2;
+  }
+
+  .abroad-block {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 48px;
+    align-items: start;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .loop-track { animation: none; }
   a.product-card:hover { transform: none; }
+  .testimonials-track { transition: none; }
 }
 
 @media print {
