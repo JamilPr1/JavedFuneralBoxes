@@ -6,8 +6,6 @@
   JFC.initChrome(titles);
 
   var grid = document.getElementById("featured-grid");
-  var form = document.getElementById("rate-form");
-  var error = document.getElementById("form-error");
 
   function renderFeatured(list) {
     if (!grid) return;
@@ -51,39 +49,4 @@
     })
     .catch(function () {});
 
-  document.addEventListener("jfc:lang", function () {
-    // Re-render not needed for static bilingual spans inside cards
-  });
-
-  if (form) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      var data = new FormData(form);
-      var name = String(data.get("name") || "").trim();
-      var city = String(data.get("city") || "").trim();
-      var note = String(data.get("note") || "").trim();
-      if (!name || !city) {
-        error.hidden = false;
-        return;
-      }
-      error.hidden = true;
-      var text =
-        JFC.currentLang() === "ur"
-          ? "السلام علیکم، جاوید ہاتھ سے تیار کوفنز (جاوید ٹریڈرز)۔ میرا نام " +
-            name +
-            " ہے۔ مجھے " +
-            city +
-            " میں ہاتھ سے تیار کوفن باکس چاہیے۔" +
-            (note ? " " + note : "") +
-            " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
-          : "Hello Javed Handmade Coffins (Javed Traders). My name is " +
-            name +
-            ". I need a handmade coffin box in " +
-            city +
-            "." +
-            (note ? " " + note : "") +
-            " Please share the rate and delivery time.";
-      JFC.openWhatsApp(text);
-    });
-  }
 })();
