@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Shop Coffin Boxes in Rawalpindi | Javed Traders Coffins",
-    ur: "راولپنڈی میں کوفن باکس خریدیں | جاوید ٹریڈرز کوفنز"
+    en: "Shop Coffin Boxes in Rawalpindi | Javed Traders - Funeral Services",
+    ur: "راولپنڈی میں کوفن باکس خریدیں | جاوید ٹریڈرز - جنازہ خدمات"
   };
   JFC.initChrome(titles);
 

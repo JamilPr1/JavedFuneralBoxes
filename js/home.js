@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Handmade Coffin Boxes in Rawalpindi | Javed Traders Coffins",
-    ur: "راولپنڈی میں ہاتھ سے تیار کوفن باکس | جاوید ٹریڈرز کوفنز"
+    en: "Funeral Services Rawalpindi | Coffins & Body Transit | Javed Traders",
+    ur: "جنازہ خدمات راولپنڈی | کوفن اور باڈی ٹرانزٹ | جاوید ٹریڈرز"
   };
   JFC.initChrome(titles);
 

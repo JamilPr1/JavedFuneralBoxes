@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Coffin Box Gallery Rawalpindi | Javed Traders Coffins",
-    ur: "کوفن باکس گیلری راولپنڈی | جاوید ٹریڈرز کوفنز"
+    en: "Coffin Box Gallery Rawalpindi | Javed Traders - Funeral Services",
+    ur: "کوفن باکس گیلری راولپنڈی | جاوید ٹریڈرز - جنازہ خدمات"
   };
   JFC.initChrome(titles);
 

@@ -7,13 +7,13 @@
   var waBase = "https://wa.me/923175404197?text=";
 
   var messages = {
-    en: "Hello. I am contacting Javed Traders Coffins, Lalkurti, Rawalpindi. Please share the rate and delivery time for a coffin box.",
-    ur: "السلام علیکم۔ جاوید ٹریڈرز کوفنز، لالکورٹی، راولپنڈی سے رابطہ ہے۔ کوفن باکس کا ریٹ اور ڈیلیوری کا وقت بتائیں۔"
+    en: "Hello. I am contacting Javed Traders - Funeral Services, Lalkurti, Rawalpindi. Please share the rate and delivery time for a coffin box.",
+    ur: "السلام علیکم۔ جاوید ٹریڈرز - جنازہ خدمات، لالکورٹی، راولپنڈی سے رابطہ ہے۔ کوفن باکس کا ریٹ اور ڈیلیوری کا وقت بتائیں۔"
   };
 
   var titles = {
-    en: "Javed Traders Coffins | Lalkurti, Rawalpindi",
-    ur: "جاوید ٹریڈرز کوفنز | لالکورٹی، راولپنڈی"
+    en: "Javed Traders - Funeral Services | Lalkurti, Rawalpindi",
+    ur: "جاوید ٹریڈرز - جنازہ خدمات | لالکورٹی، راولپنڈی"
   };
 
   function currentLang() {
@@ -81,8 +81,8 @@
       }
       error.hidden = true;
       var text = currentLang() === "ur"
-        ? "السلام علیکم، جاوید ٹریڈرز کوفنز۔ میرا نام " + name + " ہے۔ مجھے " + city + " میں کوفن باکس چاہیے۔" + (note ? " " + note : "") + " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
-        : "Hello Javed Traders Coffins. My name is " + name + ". I need a coffin box in " + city + "." + (note ? " " + note : "") + " Please share the rate and delivery time.";
+        ? "السلام علیکم، جاوید ٹریڈرز - جنازہ خدمات۔ میرا نام " + name + " ہے۔ مجھے " + city + " میں کوفن باکس چاہیے۔" + (note ? " " + note : "") + " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
+        : "Hello Javed Traders - Funeral Services. My name is " + name + ". I need a coffin box in " + city + "." + (note ? " " + note : "") + " Please share the rate and delivery time.";
       var url = waBase + encodeURIComponent(text);
       var opened = window.open(url, "_blank", "noopener");
       if (!opened) window.location.href = url;

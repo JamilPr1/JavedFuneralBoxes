@@ -1,28 +1,28 @@
 (function () {
   var map = {
     "delivery.html": {
-      en: "Coffin Box Delivery Pakistan & Abroad | Javed Traders Coffins",
-      ur: "کوفن باکس ڈیلیوری پاکستان اور بیرون ملک | جاوید ٹریڈرز کوفنز"
+      en: "Coffin Box Delivery Pakistan & Abroad | Javed Traders - Funeral Services",
+      ur: "کوفن باکس ڈیلیوری پاکستان اور بیرون ملک | جاوید ٹریڈرز - جنازہ خدمات"
     },
     "about.html": {
-      en: "About Javed Traders Coffins Lalkurti | Javed Yaqub",
-      ur: "جاوید ٹریڈرز کوفنز لالکورٹی | جاوید یعقوب"
+      en: "About Javed Traders - Funeral Services Lalkurti | Javed Yaqub",
+      ur: "جاوید ٹریڈرز - جنازہ خدمات لالکورٹی | جاوید یعقوب"
     },
     "contact.html": {
       en: "Contact for Coffin Box Rate Rawalpindi | WhatsApp 0317 5404197",
       ur: "کوفن باکس ریٹ راولپنڈی رابطہ | واٹس ایپ 0317 5404197"
     },
     "privacy-policy.html": {
-      en: "Privacy Policy | Javed Traders Coffins",
-      ur: "رازداری کی پالیسی | جاوید ٹریڈرز کوفنز"
+      en: "Privacy Policy | Javed Traders - Funeral Services",
+      ur: "رازداری کی پالیسی | جاوید ٹریڈرز - جنازہ خدمات"
     },
     "terms.html": {
-      en: "Terms of Use | Javed Traders Coffins",
-      ur: "شرائط استعمال | جاوید ٹریڈرز کوفنز"
+      en: "Terms of Use | Javed Traders - Funeral Services",
+      ur: "شرائط استعمال | جاوید ٹریڈرز - جنازہ خدمات"
     },
     "disclaimer.html": {
-      en: "Disclaimer | Javed Traders Coffins",
-      ur: "دستبرداری | جاوید ٹریڈرز کوفنز"
+      en: "Disclaimer | Javed Traders - Funeral Services",
+      ur: "دستبرداری | جاوید ٹریڈرز - جنازہ خدمات"
     }
   };
   var file = (location.pathname.split("/").pop() || "index.html").toLowerCase();
@@ -45,14 +45,14 @@
     if (error) error.hidden = true;
     var text =
       JFC.currentLang() === "ur"
-        ? "السلام علیکم، جاوید ٹریڈرز کوفنز۔ میرا نام " +
+        ? "السلام علیکم، جاوید ٹریڈرز - جنازہ خدمات۔ میرا نام " +
           name +
           " ہے۔ مجھے " +
           city +
           " میں ہاتھ سے تیار کوفن باکس چاہیے۔" +
           (note ? " " + note : "") +
           " براہ کرم ریٹ اور ڈیلیوری کا وقت بتائیں۔"
-        : "Hello Javed Traders Coffins. My name is " +
+        : "Hello Javed Traders - Funeral Services. My name is " +
           name +
           ". I need a handmade coffin box in " +
           city +
