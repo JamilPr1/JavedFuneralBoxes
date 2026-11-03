@@ -1,7 +1,7 @@
 (function () {
   var titles = {
-    en: "Funeral Services Rawalpindi | Coffins & Body Transit | Javed Traders",
-    ur: "جنازہ خدمات راولپنڈی | کوفن اور باڈی ٹرانزٹ | جاوید ٹریڈرز"
+    en: "Funeral Services Rawalpindi | Coffins, Transit & Cremation | Javed Traders",
+    ur: "جنازہ خدمات راولپنڈی | کوفن، ٹرانزٹ اور کریمیشن | جاوید ٹریڈرز"
   };
   JFC.initChrome(titles);
 

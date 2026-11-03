@@ -1121,6 +1121,10 @@ html[lang="ur"] .contact-person strong {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .facts-grid article {
     padding: 26px 18px;
     border-bottom: 0;

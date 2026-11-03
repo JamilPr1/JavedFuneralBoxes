@@ -1,8 +1,8 @@
 (function (global) {
   var waBase = "https://wa.me/923175404197?text=";
   var messages = {
-    en: "Hello. I am contacting Javed Traders - Funeral Services, Lalkurti, Rawalpindi. I need help with a coffin box, funeral service, or body transit. Please share the rate and timing.",
-    ur: "السلام علیکم۔ جاوید ٹریڈرز - جنازہ خدمات، لالکورٹی، راولپنڈی سے رابطہ ہے۔ مجھے کوفن باکس، جنازہ خدمت، یا باڈی ٹرانزٹ چاہیے۔ براہ کرم ریٹ اور وقت بتائیں۔"
+    en: "Hello. I am contacting Javed Traders - Funeral Services, Lalkurti, Rawalpindi. I need help with a coffin box, funeral service, body transit, or cremation. Please share the rate and timing.",
+    ur: "السلام علیکم۔ جاوید ٹریڈرز - جنازہ خدمات، لالکورٹی، راولپنڈی سے رابطہ ہے۔ مجھے کوفن باکس، جنازہ خدمت، باڈی ٹرانزٹ، یا کریمیشن چاہیے۔ براہ کرم ریٹ اور وقت بتائیں۔"
   };
 
   function currentLang() {
