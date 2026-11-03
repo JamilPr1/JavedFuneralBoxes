@@ -5,8 +5,8 @@
       ur: "کوفن باکس ڈیلیوری پاکستان اور بیرون ملک | جاوید ٹریڈرز - جنازہ خدمات"
     },
     "about.html": {
-      en: "About Javed Traders - Funeral Services Lalkurti | Javed Yaqub",
-      ur: "جاوید ٹریڈرز - جنازہ خدمات لالکورٹی | جاوید یعقوب"
+      en: "About Javed Traders - Funeral Services Lalkurti | Javed Gill",
+      ur: "جاوید ٹریڈرز - جنازہ خدمات لالکورٹی | جاوید گل"
     },
     "contact.html": {
       en: "Contact for Coffin Box Rate Rawalpindi | WhatsApp 0317 5404197",

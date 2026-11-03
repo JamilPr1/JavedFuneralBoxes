@@ -5,8 +5,8 @@
       name: { en: "Samuel Masih", ur: "سیموئل مسیح" },
       place: { en: "Rawalpindi, Pakistan", ur: "راولپنڈی، پاکستان" },
       quote: {
-        en: "When we needed a coffin box the same day, Javed Yaqub answered WhatsApp himself. The box arrived in Lalkurti timing that matched our family prayer.",
-        ur: "جب ہمیں اسی دن کوفن باکس چاہیے تھا، جاوید یعقوب نے خود واٹس ایپ کا جواب دیا۔ باکس لالکورٹی سے ایسے وقت پہنچا جو ہمارے خاندانی دعا کے مطابق تھا۔"
+        en: "When we needed a coffin box the same day, Javed Gill answered WhatsApp himself. The box arrived in Lalkurti timing that matched our family prayer.",
+        ur: "جب ہمیں اسی دن کوفن باکس چاہیے تھا، جاوید گل نے خود واٹس ایپ کا جواب دیا۔ باکس لالکورٹی سے ایسے وقت پہنچا جو ہمارے خاندانی دعا کے مطابق تھا۔"
       }
     },
     {

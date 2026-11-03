@@ -43,11 +43,11 @@
       product.finish_en +
       ". " +
       product.feature_en +
-      '. Open photos below, then ask Javed Yaqub for the rate on WhatsApp.</span><span class="t-ur">' +
+      '. Open photos below, then ask Javed Gill for the rate on WhatsApp.</span><span class="t-ur">' +
       product.finish_ur +
       "۔ " +
       product.feature_ur +
-      "۔ نیچے تصاویر دیکھیں، پھر ریٹ کے لیے جاوید یعقوب سے واٹس ایپ پر پوچھیں۔</span>";
+      "۔ نیچے تصاویر دیکھیں، پھر ریٹ کے لیے جاوید گل سے واٹس ایپ پر پوچھیں۔</span>";
     document.getElementById("product-finish").innerHTML =
       '<span class="t-en">' + product.finish_en + '</span><span class="t-ur">' + product.finish_ur + "</span>";
     document.getElementById("product-feature").innerHTML =
