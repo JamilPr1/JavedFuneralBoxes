@@ -1057,6 +1057,28 @@ html[lang="ur"] .contact-person strong {
   color: rgba(244, 239, 230, 0.72);
 }
 
+.footer-phones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-phones a {
+  color: rgba(244, 239, 230, 0.9);
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.footer-phones a:hover {
+  color: var(--brass-soft);
+}
+
+.footer-phone-sep {
+  opacity: 0.45;
+}
+
 .legal-prose {
   max-width: 68ch;
 }

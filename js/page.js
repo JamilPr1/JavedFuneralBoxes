@@ -9,8 +9,8 @@
       ur: "جاوید ٹریڈرز - جنازہ خدمات لالکورٹی | جاوید گل"
     },
     "contact.html": {
-      en: "Contact for Coffin Box Rate Rawalpindi | WhatsApp 0317 5404197",
-      ur: "کوفن باکس ریٹ راولپنڈی رابطہ | واٹس ایپ 0317 5404197"
+      en: "Contact Funeral Services Rawalpindi | Call 0342 5277953 | WhatsApp 0317 5404197",
+      ur: "جنازہ خدمات رابطہ راولپنڈی | کال 0342 5277953 | واٹس ایپ 0317 5404197"
     },
     "privacy-policy.html": {
       en: "Privacy Policy | Javed Traders - Funeral Services",
